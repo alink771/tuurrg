@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlux — туры, которые меняют тебя</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Кнопка переключения темы -->
+  <button class="theme-toggle" id="themeBtn" aria-label="Переключить тему">🌓 Тема</button>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <a href="index.html" class="logo">✈️ Wanderlux</a>
+
+    <nav class="main-nav">
+      <a href="#home">Главная</a>
+      <a href="#tours">Туры</a>
+      <a href="#projects">Направления</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+      <a href="register.html">Регистрация</a>
+      <a href="login.html">Вход</a>
+    </nav>
+
+    <a href="register.html" class="header-btn btn" style="text-decoration: none;">Начать</a>
+
+    <!-- Кнопка-бургер -->
+    <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- ОВЕРЛЕЙ -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Главная</a>
+    <a href="#tours">Туры</a>
+    <a href="#projects">Направления</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+    <a href="register.html">Регистрация</a>
+    <a href="login.html">Вход</a>
+    <a href="register.html" class="mobile-btn">Начать</a>
+  </nav>
+
+  <!-- ГЕРОЙ -->
+  <section class="hero" id="home">
+    <h1>Путешествуй со вкусом</h1>
+    <p>Авторские туры в самые живописные уголки планеты. Всё включено — от перелёта до впечатлений.</p>
+  </section>
+
+  <!-- ФИЛЬТРЫ И КАРТОЧКИ -->
+  <section class="tours" id="tours">
+    <h2>Наши туры</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="beach">🏖 Пляж</button>
+      <button class="filter-btn" data-filter="city">🏙 Города</button>
+      <button class="filter-btn" data-filter="nature">🏔 Природа</button>
+    </div>
+
+    <p class="filter-count">Показано: <span id="filterCount">0</span></p>
+
+    <div class="cards-section">
+      <article class="card" data-category="beach">
+        <span class="badge">NEW</span>
+        <img src="11111111.jpg" alt="Мальдивы">
+        <h3>Мальдивы</h3>
+        <p>Белоснежный песок, бирюзовая вода и виллы над океаном. 7 дней рая.</p>
+        <label class="fav"><input type="checkbox"><span>В избранное</span></label>
+      </article>
+      <article class="card" data-category="city">
+        <span class="badge">ХИТ</span>
+        <img src="22222222.jpg" alt="Венеция">
+        <h3>Венеция</h3>
+        <p>Гондолы, мосты и атмосфера старой Европы. Романтика на каждом шагу.</p>
+        <label class="fav"><input type="checkbox"><span>В избранное</span></label>
+      </article>
+      <article class="card" data-category="nature">
+        <img src="33333333.jpg" alt="Исландия">
+        <h3>Исландия</h3>
+        <p>Ледники, гейзеры и северное сияние. Приключение для смелых.</p>
+        <label class="fav"><input type="checkbox"><span>В избранное</span></label>
+      </article>
+      <article class="card" data-category="beach">
+        <span class="badge">SALE</span>
+        <img src="44444444.jpg" alt="Бали">
+        <h3>Бали</h3>
+        <p>Джунгли, рисовые террасы и храмы. Гармония тела и души.</p>
+        <label class="fav"><input type="checkbox"><span>В избранное</span></label>
+      </article>
+      <article class="card" data-category="nature">
+        <img src="55555555.jpg" alt="Альпы">
+        <h3>Альпы</h3>
+        <p>Снежные вершины и горнолыжные курорты. Зима, которую ждёшь весь год.</p>
+        <label class="fav"><input type="checkbox"><span>В избранное</span></label>
+      </article>
+    </div>
+  </section>
+
+  <!-- САЙДБАР + КОНТЕНТ -->
+  <section class="layout" id="about">
+    <aside class="sidebar">
+      <h3>Почему мы</h3>
+      <p>Более 10 лет организуем туры мечты. Индивидуальный подход, лучшие отели, поддержка 24/7.</p>
+    </aside>
+    <main class="content">
+      <h2>О компании Wanderlux</h2>
+      <p>Мы создаём путешествия, которые остаются в памяти навсегда. Каждый маршрут продуман до мелочей: перелёты, трансферы, экскурсии и гастрономия. Ваша задача — только наслаждаться.</p>
+    </main>
+  </section>
+
+  <!-- НАПРАВЛЕНИЯ -->
+  <section class="projects-section" id="projects">
+    <h2>Популярные направления</h2>
+    <div class="projects-grid">
+      <div class="project-card"><img src="666.jpg" alt="Европа"><h3>Европа</h3></div>
+      <div class="project-card"><img src="777.jpg" alt="Азия"><h3>Азия</h3></div>
+      <div class="project-card"><img src="888.jpg" alt="Африка"><h3>Африка</h3></div>
+      <div class="project-card"><img src="999.jpg" alt="Америка"><h3>Америка</h3></div>
+    </div>
+  </section>
+
+  <!-- ФОРМА -->
+  <section class="form-section" id="contact">
+    <h2>Оставьте заявку</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Куда хотите поехать?" rows="4"></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer>
+    <p>© 2026 Wanderlux. Путешествуй ярко.</p>
+  </footer>
+
+  <!-- КНОПКА НАВЕРХ -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
